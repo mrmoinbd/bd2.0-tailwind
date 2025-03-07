@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BD 2.0</title>
-</head>
-<body>
-    
-</body>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#FA8405",
+                "secondary": "#FFF",
+                "body": "#191718",
+              },
+              fontFamily: {
+                'Popins': 'Poppins'
+              }
+            }
+          }
+        }
+      </script>
+  </head>
+  <body class="bg-body font-Popins">
+    <section class="w-screen h-screen text-secondary">
+        <nav class="flex justify-between">
+            <div>
+                <img src="./images/logo.png" alt="">
+                <h3>BD2.0</h3>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Contrubution</a></li>
+                    <li><a href="#">Donate</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+  </body>
 </html>
